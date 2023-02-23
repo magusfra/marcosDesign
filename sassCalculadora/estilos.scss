@@ -1,0 +1,59 @@
+$principal: #7fffd4;
+$operaciones: #a52a2a;
+$opciones: #f0ffff;
+
+
+
+body {
+    background-color: $principal;
+
+    .container {
+        padding: 5%;
+        padding-bottom: 0;
+
+        .display {
+            display: flex;
+            align-items: flex-end;
+            width: 100%;
+        }
+
+        .botones {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            button {
+                border-radius: 50%;
+                background-color: $opciones;
+                color: black;
+                &:hover{
+                    opacity: .8;
+                }
+                &:active{
+                    transform: scale(1.1);
+                }
+            }
+
+            .boton0 {
+                grid-column-end:span 2;
+            }
+
+            .operacion {
+                background-color: $operaciones;
+            }
+
+            .opciones {
+                background-color: $opciones;
+            }
+        }
+    }
+}
+
+/**
+&.hover{
+
+}
+&.active{
+
+}
+
+*/
